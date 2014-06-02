@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Avi Singh/Desktop/FPGA/hilbert_transform/fft_sequent_test_isim_beh.exe" -prj "C:/Users/Avi Singh/Desktop/FPGA/hilbert_transform/fft_sequent_test_beh.prj" "work.fft_sequent_test" "work.glbl" 

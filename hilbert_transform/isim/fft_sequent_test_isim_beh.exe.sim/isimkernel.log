@@ -1,0 +1,29 @@
+Command line:
+   fft_sequent_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51085
+
+Wed May 21 08:08:15 2014
+
+
+ Elaboration Time: 0.296875 sec
+
+ Current Memory Usage: 1020.01 Meg
+
+ Total Signals          : 370
+ Total Nets             : 9248
+ Total Signal Drivers   : 359
+ Total Blocks           : 19
+ Total Primitive Blocks : 17
+ Total Processes        : 381
+ Total Traceable Variables  : 233
+ Total Scalar Nets and Variables : 16071
+Total Line Count : 1384
+
+ Total Simulation Time: 0.390625 sec
+
+ Current Memory Usage: 1019.97 Meg
+
+Wed May 21 08:09:04 2014
+

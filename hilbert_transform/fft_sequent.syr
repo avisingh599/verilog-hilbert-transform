@@ -1,0 +1,798 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: fft_sequent.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fft_sequent.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fft_sequent"
+Output Format                      : NGC
+Target Device                      : xc6vlx75t-1-ff484
+
+---- Source Options
+Top Module Name                    : fft_sequent
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Avi Singh\Desktop\FPGA\hilbert_transform\bffly.v" into library work
+Parsing module <bffly>.
+Analyzing Verilog file "C:\Users\Avi Singh\Desktop\FPGA\hilbert_transform\hilbert_tr.v" into library work
+Parsing module <fft_sequent>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <fft_sequent>.
+
+Elaborating module <bffly>.
+"C:\Users\Avi Singh\Desktop\FPGA\hilbert_transform\hilbert_tr.v" Line 1367. $display tr4 = 32'sb................................
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <fft_sequent>.
+    Related source file is "C:\Users\Avi Singh\Desktop\FPGA\hilbert_transform\hilbert_tr.v".
+    Found 32-bit register for signal <tr0>.
+    Found 32-bit register for signal <tr1>.
+    Found 32-bit register for signal <tr2>.
+    Found 32-bit register for signal <tr3>.
+    Found 32-bit register for signal <tr4>.
+    Found 32-bit register for signal <tr5>.
+    Found 32-bit register for signal <tr6>.
+    Found 32-bit register for signal <tr7>.
+    Found 32-bit register for signal <tr8>.
+    Found 32-bit register for signal <tr9>.
+    Found 32-bit register for signal <tr10>.
+    Found 32-bit register for signal <tr11>.
+    Found 32-bit register for signal <tr12>.
+    Found 32-bit register for signal <tr13>.
+    Found 32-bit register for signal <tr14>.
+    Found 32-bit register for signal <tr15>.
+    Found 32-bit register for signal <tr16>.
+    Found 32-bit register for signal <tr17>.
+    Found 32-bit register for signal <tr18>.
+    Found 32-bit register for signal <tr19>.
+    Found 32-bit register for signal <tr20>.
+    Found 32-bit register for signal <tr21>.
+    Found 32-bit register for signal <tr22>.
+    Found 32-bit register for signal <tr23>.
+    Found 32-bit register for signal <tr24>.
+    Found 32-bit register for signal <tr25>.
+    Found 32-bit register for signal <tr26>.
+    Found 32-bit register for signal <tr27>.
+    Found 32-bit register for signal <tr28>.
+    Found 32-bit register for signal <tr29>.
+    Found 32-bit register for signal <tr30>.
+    Found 32-bit register for signal <tr31>.
+    Found 32-bit register for signal <ti0>.
+    Found 32-bit register for signal <ti1>.
+    Found 32-bit register for signal <ti2>.
+    Found 32-bit register for signal <ti3>.
+    Found 32-bit register for signal <ti4>.
+    Found 32-bit register for signal <ti5>.
+    Found 32-bit register for signal <ti6>.
+    Found 32-bit register for signal <ti7>.
+    Found 32-bit register for signal <ti8>.
+    Found 32-bit register for signal <ti9>.
+    Found 32-bit register for signal <ti10>.
+    Found 32-bit register for signal <ti11>.
+    Found 32-bit register for signal <ti12>.
+    Found 32-bit register for signal <ti13>.
+    Found 32-bit register for signal <ti14>.
+    Found 32-bit register for signal <ti15>.
+    Found 32-bit register for signal <ti16>.
+    Found 32-bit register for signal <ti17>.
+    Found 32-bit register for signal <ti18>.
+    Found 32-bit register for signal <ti19>.
+    Found 32-bit register for signal <ti20>.
+    Found 32-bit register for signal <ti21>.
+    Found 32-bit register for signal <ti22>.
+    Found 32-bit register for signal <ti23>.
+    Found 32-bit register for signal <ti24>.
+    Found 32-bit register for signal <ti25>.
+    Found 32-bit register for signal <ti26>.
+    Found 32-bit register for signal <ti27>.
+    Found 32-bit register for signal <ti28>.
+    Found 32-bit register for signal <ti29>.
+    Found 32-bit register for signal <ti30>.
+    Found 32-bit register for signal <ti31>.
+    Found 16-bit register for signal <win0_r>.
+    Found 16-bit register for signal <win1_r>.
+    Found 16-bit register for signal <win2_r>.
+    Found 16-bit register for signal <win3_r>.
+    Found 16-bit register for signal <win4_r>.
+    Found 16-bit register for signal <win5_r>.
+    Found 16-bit register for signal <win6_r>.
+    Found 16-bit register for signal <win7_r>.
+    Found 16-bit register for signal <win8_r>.
+    Found 16-bit register for signal <win9_r>.
+    Found 16-bit register for signal <win10_r>.
+    Found 16-bit register for signal <win11_r>.
+    Found 16-bit register for signal <win12_r>.
+    Found 16-bit register for signal <win13_r>.
+    Found 16-bit register for signal <win14_r>.
+    Found 16-bit register for signal <win15_r>.
+    Found 16-bit register for signal <win0_i>.
+    Found 16-bit register for signal <win1_i>.
+    Found 16-bit register for signal <win2_i>.
+    Found 16-bit register for signal <win3_i>.
+    Found 16-bit register for signal <win4_i>.
+    Found 16-bit register for signal <win5_i>.
+    Found 16-bit register for signal <win6_i>.
+    Found 16-bit register for signal <win7_i>.
+    Found 16-bit register for signal <win8_i>.
+    Found 16-bit register for signal <win9_i>.
+    Found 16-bit register for signal <win10_i>.
+    Found 16-bit register for signal <win11_i>.
+    Found 16-bit register for signal <win12_i>.
+    Found 16-bit register for signal <win13_i>.
+    Found 16-bit register for signal <win14_i>.
+    Found 16-bit register for signal <win15_i>.
+    Found 4-bit register for signal <stage>.
+    Found 1-bit register for signal <enable>.
+    Found 32-bit adder for signal <n0968> created at line 1029.
+    Found 32-bit adder for signal <n0970> created at line 1032.
+    Found 32-bit adder for signal <n0972> created at line 1035.
+    Found 32-bit adder for signal <n0974> created at line 1038.
+    Found 32-bit adder for signal <n0976> created at line 1041.
+    Found 32-bit adder for signal <n0978> created at line 1044.
+    Found 32-bit adder for signal <n0980> created at line 1047.
+    Found 32-bit adder for signal <n0982> created at line 1050.
+    Found 32-bit adder for signal <n0984> created at line 1053.
+    Found 32-bit adder for signal <n0986> created at line 1056.
+    Found 32-bit adder for signal <n0988> created at line 1059.
+    Found 32-bit adder for signal <n0990> created at line 1062.
+    Found 32-bit adder for signal <n0992> created at line 1065.
+    Found 32-bit adder for signal <n0994> created at line 1068.
+    Found 32-bit adder for signal <n0996> created at line 1071.
+    Found 32-bit adder for signal <n0998> created at line 1077.
+    Found 32-bit adder for signal <n1000> created at line 1080.
+    Found 32-bit adder for signal <n1002> created at line 1083.
+    Found 32-bit adder for signal <n1004> created at line 1086.
+    Found 32-bit adder for signal <n1006> created at line 1089.
+    Found 32-bit adder for signal <n1008> created at line 1092.
+    Found 32-bit adder for signal <n1010> created at line 1095.
+    Found 32-bit adder for signal <n1012> created at line 1098.
+    Found 32-bit adder for signal <n1014> created at line 1101.
+    Found 32-bit adder for signal <n1016> created at line 1104.
+    Found 32-bit adder for signal <n1018> created at line 1107.
+    Found 32-bit adder for signal <n1020> created at line 1110.
+    Found 32-bit adder for signal <n1022> created at line 1113.
+    Found 32-bit adder for signal <n1024> created at line 1116.
+    Found 32-bit adder for signal <n1026> created at line 1119.
+    Found 4-bit adder for signal <stage[3]_GND_1_o_add_927_OUT> created at line 1783.
+    Summary:
+	inferred  31 Adder/Subtractor(s).
+	inferred 2549 D-type flip-flop(s).
+	inferred 662 Multiplexer(s).
+Unit <fft_sequent> synthesized.
+
+Synthesizing Unit <bffly>.
+    Related source file is "C:\Users\Avi Singh\Desktop\FPGA\hilbert_transform\bffly.v".
+    Found 32-bit register for signal <ya_i>.
+    Found 32-bit register for signal <yb_r>.
+    Found 32-bit register for signal <yb_i>.
+    Found 1-bit register for signal <ready>.
+    Found 32-bit register for signal <ya_r>.
+    Found 48-bit subtractor for signal <temp_r_48> created at line 53.
+    Found 32-bit subtractor for signal <xa_r[31]_temp_r_32[31]_sub_12_OUT> created at line 65.
+    Found 32-bit subtractor for signal <xa_i[31]_temp_i_32[31]_sub_13_OUT> created at line 66.
+    Found 48-bit adder for signal <temp_i_48> created at line 54.
+    Found 32-bit adder for signal <xa_r[31]_temp_r_32[31]_add_9_OUT> created at line 63.
+    Found 32-bit adder for signal <xa_i[31]_temp_i_32[31]_add_10_OUT> created at line 64.
+    Found 32x16-bit multiplier for signal <xb_r[31]_w_r[15]_MuLt_0_OUT> created at line 53.
+    Found 32x16-bit multiplier for signal <xb_i[31]_w_i[15]_MuLt_1_OUT> created at line 53.
+    Found 32x16-bit multiplier for signal <n0051> created at line 54.
+    Found 32x16-bit multiplier for signal <n0052> created at line 54.
+    Summary:
+	inferred   4 Multiplier(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred 129 D-type flip-flop(s).
+Unit <bffly> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 64
+ 32x16-bit multiplier                                  : 64
+# Adders/Subtractors                                   : 127
+ 32-bit adder                                          : 62
+ 32-bit subtractor                                     : 32
+ 4-bit adder                                           : 1
+ 48-bit adder                                          : 16
+ 48-bit subtractor                                     : 16
+# Registers                                            : 177
+ 1-bit register                                        : 17
+ 16-bit register                                       : 31
+ 32-bit register                                       : 128
+ 4-bit register                                        : 1
+# Multiplexers                                         : 662
+ 16-bit 2-to-1 multiplexer                             : 142
+ 32-bit 2-to-1 multiplexer                             : 520
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <win0_r_0> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_1> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_2> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_3> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_4> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_5> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_6> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_7> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_8> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_9> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_10> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_11> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_12> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_13> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_14> (without init value) has a constant value of 1 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_15> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <win0_r<15:15>> (without init value) have a constant value of 0 in block <fft_sequent>.
+
+Synthesizing (advanced) Unit <fft_sequent>.
+The following registers are absorbed into counter <stage>: 1 register on signal <stage>.
+Unit <fft_sequent> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 64
+ 32x16-bit multiplier                                  : 64
+# Adders/Subtractors                                   : 126
+ 32-bit adder                                          : 62
+ 32-bit subtractor                                     : 32
+ 48-bit adder                                          : 16
+ 48-bit subtractor                                     : 16
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 4608
+ Flip-Flops                                            : 4608
+# Multiplexers                                         : 662
+ 16-bit 2-to-1 multiplexer                             : 142
+ 32-bit 2-to-1 multiplexer                             : 520
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <win0_r_0> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_1> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_2> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_3> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_4> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_5> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_6> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_7> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_8> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_9> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_10> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_11> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_12> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_13> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win0_r_14> (without init value) has a constant value of 1 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <win12_r_13> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win12_r_11> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win12_r_10> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win12_r_8> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win12_r_6> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win14_r_13> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win14_r_11> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win14_r_8> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win10_r_12> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win10_r_5> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win10_r_4> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win10_r_3> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win10_r_2> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win9_r_4> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win9_r_3> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win9_r_1> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win11_r_13> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win11_r_8> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win7_r_13> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win7_r_8> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_i_13> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_i_12> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_i_11> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_i_10> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_i_9> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_i_8> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_i_7> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_i_6> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_i_5> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_i_4> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_i_3> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_i_2> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_i_1> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_i_0> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win15_r_13> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win15_r_11> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win13_r_12> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win13_r_5> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win13_r_4> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win13_r_2> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win5_r_4> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win4_r_15> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win4_r_12> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win4_r_9> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win4_r_7> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win4_r_5> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win4_r_4> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win4_r_3> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win4_r_2> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win4_r_1> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win2_r_15> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win2_r_7> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win2_r_4> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win2_r_3> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win2_r_2> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win2_r_1> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win1_r_15> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win1_r_4> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win1_r_3> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win1_r_1> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win6_r_13> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win6_r_10> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win6_r_8> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_15> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_13> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_12> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_11> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_10> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_9> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_8> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_7> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_6> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_5> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_4> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_3> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_2> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_1> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win8_r_0> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win5_r_12> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <win5_r_5> (without init value) has a constant value of 0 in block <fft_sequent>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <win1_r_8> in Unit <fft_sequent> is equivalent to the following 15 FFs/Latches, which will be removed : <win3_r_3> <win5_r_10> <win7_r_0> <win7_r_1> <win7_r_7> <win7_r_15> <win11_r_2> <win11_r_3> <win9_r_0> <win9_r_11> <win13_r_8> <win13_r_10> <win13_r_13> <win15_r_2> <win15_r_7> 
+INFO:Xst:2261 - The FF/Latch <win5_i_1> in Unit <fft_sequent> is equivalent to the following 9 FFs/Latches, which will be removed : <win5_i_2> <win5_i_4> <win9_i_7> <win9_i_9> <win7_i_7> <win7_i_9> <win11_i_1> <win11_i_2> <win11_i_4> 
+INFO:Xst:2261 - The FF/Latch <win4_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win12_i_0> 
+INFO:Xst:2261 - The FF/Latch <win3_i_9> in Unit <fft_sequent> is equivalent to the following 9 FFs/Latches, which will be removed : <win5_i_5> <win5_i_12> <win9_i_2> <win9_i_12> <win7_i_2> <win7_i_12> <win11_i_5> <win11_i_12> <win13_i_9> 
+INFO:Xst:2261 - The FF/Latch <win1_r_0> in Unit <fft_sequent> is equivalent to the following 23 FFs/Latches, which will be removed : <win1_r_11> <win1_r_13> <win3_r_1> <win3_r_2> <win3_r_4> <win3_r_5> <win3_r_12> <win5_r_8> <win5_r_13> <win7_r_2> <win7_r_3> <win7_r_4> <win11_r_1> <win11_r_4> <win11_r_5> <win11_r_12> <win9_r_8> <win9_r_13> <win15_r_0> <win15_r_1> <win15_r_3> <win15_r_4> <win15_r_15> 
+INFO:Xst:2261 - The FF/Latch <win1_i_8> in Unit <fft_sequent> is equivalent to the following 11 FFs/Latches, which will be removed : <win1_i_13> <win3_i_6> <win3_i_10> <win5_i_6> <win9_i_8> <win7_i_8> <win11_i_6> <win15_i_8> <win15_i_13> <win13_i_6> <win13_i_10> 
+INFO:Xst:2261 - The FF/Latch <win1_i_10> in Unit <fft_sequent> is equivalent to the following 3 FFs/Latches, which will be removed : <win5_i_10> <win11_i_10> <win15_i_10> 
+INFO:Xst:2261 - The FF/Latch <win4_i_1> in Unit <fft_sequent> is equivalent to the following 15 FFs/Latches, which will be removed : <win4_i_2> <win4_i_3> <win4_i_4> <win4_i_5> <win4_i_7> <win4_i_9> <win4_i_12> <win12_i_1> <win12_i_2> <win12_i_3> <win12_i_4> <win12_i_5> <win12_i_7> <win12_i_9> <win12_i_12> 
+INFO:Xst:2261 - The FF/Latch <win1_r_9> in Unit <fft_sequent> is equivalent to the following 10 FFs/Latches, which will be removed : <win1_r_12> <win5_r_1> <win5_r_7> <win5_r_9> <win7_r_6> <win7_r_10> <win11_r_6> <win11_r_11> <win9_r_9> <win9_r_12> 
+INFO:Xst:2261 - The FF/Latch <win3_i_11> in Unit <fft_sequent> is equivalent to the following 3 FFs/Latches, which will be removed : <win5_i_11> <win11_i_11> <win13_i_11> 
+INFO:Xst:2261 - The FF/Latch <win2_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win14_i_0> 
+INFO:Xst:2261 - The FF/Latch <win3_i_5> in Unit <fft_sequent> is equivalent to the following 5 FFs/Latches, which will be removed : <win3_i_12> <win5_i_9> <win11_i_9> <win13_i_5> <win13_i_12> 
+INFO:Xst:2261 - The FF/Latch <win2_i_1> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win14_i_1> 
+INFO:Xst:2261 - The FF/Latch <win2_r_6> in Unit <fft_sequent> is equivalent to the following 11 FFs/Latches, which will be removed : <win2_r_10> <win6_r_0> <win6_r_7> <win6_r_9> <win6_r_15> <win10_r_0> <win10_r_6> <win10_r_11> <win14_r_5> <win14_r_9> <win14_r_12> 
+INFO:Xst:2261 - The FF/Latch <win4_i_6> in Unit <fft_sequent> is equivalent to the following 9 FFs/Latches, which will be removed : <win4_i_8> <win4_i_10> <win4_i_11> <win4_i_13> <win12_i_6> <win12_i_8> <win12_i_10> <win12_i_11> <win12_i_13> 
+INFO:Xst:2261 - The FF/Latch <win1_i_14> in Unit <fft_sequent> is equivalent to the following 7 FFs/Latches, which will be removed : <win3_i_14> <win5_i_14> <win9_i_14> <win7_i_14> <win11_i_14> <win15_i_14> <win13_i_14> 
+INFO:Xst:2261 - The FF/Latch <win2_i_2> in Unit <fft_sequent> is equivalent to the following 9 FFs/Latches, which will be removed : <win2_i_3> <win2_i_4> <win2_i_5> <win2_i_12> <win14_i_2> <win14_i_3> <win14_i_4> <win14_i_5> <win14_i_12> 
+INFO:Xst:2261 - The FF/Latch <win4_i_15> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win12_i_15> 
+INFO:Xst:2261 - The FF/Latch <win1_i_15> in Unit <fft_sequent> is equivalent to the following 7 FFs/Latches, which will be removed : <win3_i_15> <win5_i_15> <win9_i_15> <win7_i_15> <win11_i_15> <win15_i_15> <win13_i_15> 
+INFO:Xst:2261 - The FF/Latch <win1_i_12> in Unit <fft_sequent> is equivalent to the following 7 FFs/Latches, which will be removed : <win9_i_3> <win9_i_4> <win9_i_5> <win7_i_3> <win7_i_4> <win7_i_5> <win15_i_12> 
+INFO:Xst:2261 - The FF/Latch <win2_i_6> in Unit <fft_sequent> is equivalent to the following 3 FFs/Latches, which will be removed : <win2_i_11> <win14_i_6> <win14_i_11> 
+INFO:Xst:2261 - The FF/Latch <win6_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win10_i_0> 
+INFO:Xst:2261 - The FF/Latch <win10_r_8> in Unit <fft_sequent> is equivalent to the following 9 FFs/Latches, which will be removed : <win10_r_10> <win10_r_13> <win14_r_0> <win14_r_1> <win14_r_2> <win14_r_3> <win14_r_4> <win14_r_7> <win14_r_15> 
+INFO:Xst:2261 - The FF/Latch <win2_r_5> in Unit <fft_sequent> is equivalent to the following 10 FFs/Latches, which will be removed : <win2_r_9> <win2_r_12> <win6_r_6> <win6_r_11> <win10_r_1> <win10_r_7> <win10_r_9> <win10_r_15> <win14_r_6> <win14_r_10> 
+INFO:Xst:2261 - The FF/Latch <win2_i_7> in Unit <fft_sequent> is equivalent to the following 13 FFs/Latches, which will be removed : <win2_i_9> <win6_i_1> <win6_i_2> <win6_i_3> <win6_i_4> <win6_i_7> <win10_i_1> <win10_i_2> <win10_i_3> <win10_i_4> <win10_i_7> <win14_i_7> <win14_i_9> 
+INFO:Xst:2261 - The FF/Latch <win9_i_10> in Unit <fft_sequent> is equivalent to the following 3 FFs/Latches, which will be removed : <win9_i_13> <win7_i_10> <win7_i_13> 
+INFO:Xst:2261 - The FF/Latch <win6_i_5> in Unit <fft_sequent> is equivalent to the following 5 FFs/Latches, which will be removed : <win6_i_9> <win6_i_12> <win10_i_5> <win10_i_9> <win10_i_12> 
+INFO:Xst:2261 - The FF/Latch <win13_r_7> in Unit <fft_sequent> is equivalent to the following 2 FFs/Latches, which will be removed : <win13_r_9> <win13_r_15> 
+INFO:Xst:2261 - The FF/Latch <win4_r_0> in Unit <fft_sequent> is equivalent to the following 15 FFs/Latches, which will be removed : <win4_r_6> <win4_r_8> <win4_r_10> <win4_r_11> <win4_r_13> <win12_r_0> <win12_r_1> <win12_r_2> <win12_r_3> <win12_r_4> <win12_r_5> <win12_r_7> <win12_r_9> <win12_r_12> <win12_r_15> 
+INFO:Xst:2261 - The FF/Latch <win2_i_8> in Unit <fft_sequent> is equivalent to the following 9 FFs/Latches, which will be removed : <win2_i_10> <win2_i_13> <win6_i_6> <win6_i_10> <win10_i_6> <win10_i_10> <win14_i_8> <win14_i_10> <win14_i_13> 
+INFO:Xst:2261 - The FF/Latch <win1_r_2> in Unit <fft_sequent> is equivalent to the following 13 FFs/Latches, which will be removed : <win1_r_7> <win3_r_8> <win3_r_10> <win3_r_13> <win5_r_2> <win5_r_3> <win7_r_11> <win11_r_10> <win9_r_2> <win9_r_7> <win9_r_15> <win13_r_3> <win15_r_8> 
+INFO:Xst:2261 - The FF/Latch <win6_i_8> in Unit <fft_sequent> is equivalent to the following 5 FFs/Latches, which will be removed : <win6_i_11> <win6_i_13> <win10_i_8> <win10_i_11> <win10_i_13> 
+INFO:Xst:2261 - The FF/Latch <win4_i_14> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win12_i_14> 
+INFO:Xst:2261 - The FF/Latch <win1_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win15_i_0> 
+INFO:Xst:2261 - The FF/Latch <win1_i_1> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win15_i_1> 
+INFO:Xst:2261 - The FF/Latch <win1_i_2> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win15_i_2> 
+INFO:Xst:2261 - The FF/Latch <win2_i_14> in Unit <fft_sequent> is equivalent to the following 3 FFs/Latches, which will be removed : <win6_i_14> <win10_i_14> <win14_i_14> 
+INFO:Xst:2261 - The FF/Latch <win9_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win7_i_0> 
+INFO:Xst:2261 - The FF/Latch <win3_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win13_i_0> 
+INFO:Xst:2261 - The FF/Latch <win1_i_3> in Unit <fft_sequent> is equivalent to the following 5 FFs/Latches, which will be removed : <win1_i_4> <win1_i_5> <win15_i_3> <win15_i_4> <win15_i_5> 
+INFO:Xst:2261 - The FF/Latch <win2_i_15> in Unit <fft_sequent> is equivalent to the following 3 FFs/Latches, which will be removed : <win6_i_15> <win10_i_15> <win14_i_15> 
+INFO:Xst:2261 - The FF/Latch <win9_i_1> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win7_i_1> 
+INFO:Xst:2261 - The FF/Latch <win3_i_1> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win13_i_1> 
+INFO:Xst:2261 - The FF/Latch <win1_r_6> in Unit <fft_sequent> is equivalent to the following 7 FFs/Latches, which will be removed : <win1_r_10> <win3_r_0> <win7_r_5> <win13_r_0> <win13_r_6> <win13_r_11> <win15_r_5> 
+INFO:Xst:2261 - The FF/Latch <win1_r_5> in Unit <fft_sequent> is equivalent to the following 7 FFs/Latches, which will be removed : <win3_r_6> <win3_r_11> <win5_r_15> <win9_r_5> <win13_r_1> <win15_r_6> <win15_r_10> 
+INFO:Xst:2261 - The FF/Latch <win3_i_2> in Unit <fft_sequent> is equivalent to the following 5 FFs/Latches, which will be removed : <win3_i_3> <win3_i_7> <win13_i_2> <win13_i_3> <win13_i_7> 
+INFO:Xst:2261 - The FF/Latch <win1_i_7> in Unit <fft_sequent> is equivalent to the following 3 FFs/Latches, which will be removed : <win1_i_9> <win15_i_7> <win15_i_9> 
+INFO:Xst:2261 - The FF/Latch <win5_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win11_i_0> 
+INFO:Xst:2261 - The FF/Latch <win3_r_7> in Unit <fft_sequent> is equivalent to the following 14 FFs/Latches, which will be removed : <win3_r_9> <win3_r_15> <win5_r_0> <win5_r_6> <win5_r_11> <win7_r_9> <win7_r_12> <win11_r_0> <win11_r_7> <win11_r_9> <win9_r_6> <win9_r_10> <win15_r_9> <win15_r_12> 
+INFO:Xst:2261 - The FF/Latch <win2_r_0> in Unit <fft_sequent> is equivalent to the following 9 FFs/Latches, which will be removed : <win2_r_8> <win2_r_11> <win2_r_13> <win6_r_1> <win6_r_2> <win6_r_3> <win6_r_4> <win6_r_5> <win6_r_12> 
+INFO:Xst:2261 - The FF/Latch <win1_i_6> in Unit <fft_sequent> is equivalent to the following 15 FFs/Latches, which will be removed : <win1_i_11> <win3_i_8> <win3_i_13> <win5_i_8> <win5_i_13> <win9_i_6> <win9_i_11> <win7_i_6> <win7_i_11> <win11_i_8> <win11_i_13> <win15_i_6> <win15_i_11> <win13_i_8> <win13_i_13> 
+INFO:Xst:2261 - The FF/Latch <win3_i_4> in Unit <fft_sequent> is equivalent to the following 5 FFs/Latches, which will be removed : <win5_i_3> <win5_i_7> <win11_i_3> <win11_i_7> <win13_i_4> 
+
+Optimizing unit <bffly> ...
+
+Optimizing unit <fft_sequent> ...
+INFO:Xst:2261 - The FF/Latch <win1_i_10> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win9_i_10> 
+INFO:Xst:2261 - The FF/Latch <win2_i_6> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win6_i_8> 
+INFO:Xst:2261 - The FF/Latch <win1_r_6> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win11_r_15> 
+INFO:Xst:2261 - The FF/Latch <win1_r_2> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win4_r_0> 
+INFO:Xst:2261 - The FF/Latch <win1_r_2> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win4_i_0> 
+INFO:Xst:2261 - The FF/Latch <win2_r_5> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <win8_i_14> 
+INFO:Xst:2261 - The FF/Latch <z12/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z12/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z6/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z6/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z1/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z1/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z12/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z12/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z6/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z6/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z1/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z1/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z11/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z11/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z5/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z5/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z0/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z0/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z15/ready> in Unit <fft_sequent> is equivalent to the following 15 FFs/Latches, which will be removed : <z14/ready> <z13/ready> <z12/ready> <z11/ready> <z10/ready> <z9/ready> <z8/ready> <z7/ready> <z6/ready> <z5/ready> <z4/ready> <z3/ready> <z2/ready> <z1/ready> <z0/ready> 
+INFO:Xst:2261 - The FF/Latch <z11/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z11/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z5/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z5/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z0/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z0/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z15/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z15/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z9/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z9/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z10/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z10/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z4/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z4/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z15/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z15/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z9/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z9/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z10/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z10/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z4/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z4/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z14/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z14/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z8/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z8/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z3/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z3/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z14/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z14/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z8/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z8/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z3/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z3/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z13/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z13/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z7/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z7/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z2/ya_r_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z2/yb_r_0> 
+INFO:Xst:2261 - The FF/Latch <z13/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z13/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z7/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z7/ya_i_0> 
+INFO:Xst:2261 - The FF/Latch <z2/yb_i_0> in Unit <fft_sequent> is equivalent to the following FF/Latch, which will be removed : <z2/ya_i_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fft_sequent, actual ratio is 23.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 3046
+ Flip-Flops                                            : 3046
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : fft_sequent.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 17568
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 960
+#      LUT2                        : 3646
+#      LUT3                        : 138
+#      LUT4                        : 292
+#      LUT5                        : 1330
+#      LUT6                        : 2928
+#      MUXCY                       : 4418
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 3850
+# FlipFlops/Latches                : 3046
+#      FD                          : 2
+#      FDE                         : 3044
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3072
+#      IBUF                        : 1024
+#      OBUF                        : 2048
+# DSPs                             : 128
+#      DSP48E1                     : 128
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx75tff484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            3046  out of  93120     3%  
+ Number of Slice LUTs:                 9296  out of  46560    19%  
+    Number used as Logic:              9296  out of  46560    19%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   9296
+   Number with an unused Flip Flop:    6250  out of   9296    67%  
+   Number with an unused LUT:             0  out of   9296     0%  
+   Number of fully used LUT-FF pairs:  3046  out of   9296    32%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                        3073
+ Number of bonded IOBs:                3073  out of    240   1280% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of DSP48E1s:                    128  out of    288    44%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 3174  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 8.380ns (Maximum Frequency: 119.332MHz)
+   Minimum input arrival time before clock: 2.688ns
+   Maximum output required time after clock: 0.843ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.380ns (frequency: 119.332MHz)
+  Total number of paths / destination ports: 66310681 / 9786
+-------------------------------------------------------------------------
+Delay:               8.380ns (Levels of Logic = 33)
+  Source:            z15/Mmult_xb_r[31]_w_r[15]_MuLt_0_OUT (DSP)
+  Destination:       z15/ya_r_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: z15/Mmult_xb_r[31]_w_r[15]_MuLt_0_OUT to z15/ya_r_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48E1:CLK->PCOUT47    1   4.163   0.000  z15/Mmult_xb_r[31]_w_r[15]_MuLt_0_OUT (z15/Mmult_xb_r[31]_w_r[15]_MuLt_0_OUT_PCOUT_to_Mmult_xb_r[31]_w_r[15]_MuLt_0_OUT1_PCIN_47)
+     DSP48E1:PCIN47->P0    1   1.591   0.491  z15/Mmult_xb_r[31]_w_r[15]_MuLt_0_OUT1 (z15/xb_r[31]_w_r[15]_MuLt_0_OUT<17>)
+     LUT2:I0->O            1   0.068   0.000  z15/Msub_temp_r_48_lut<17> (z15/Msub_temp_r_48_lut<17>)
+     MUXCY:S->O            1   0.290   0.000  z15/Msub_temp_r_48_cy<17> (z15/Msub_temp_r_48_cy<17>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<18> (z15/Msub_temp_r_48_cy<18>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<19> (z15/Msub_temp_r_48_cy<19>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<20> (z15/Msub_temp_r_48_cy<20>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<21> (z15/Msub_temp_r_48_cy<21>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<22> (z15/Msub_temp_r_48_cy<22>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<23> (z15/Msub_temp_r_48_cy<23>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<24> (z15/Msub_temp_r_48_cy<24>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<25> (z15/Msub_temp_r_48_cy<25>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<26> (z15/Msub_temp_r_48_cy<26>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<27> (z15/Msub_temp_r_48_cy<27>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<28> (z15/Msub_temp_r_48_cy<28>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<29> (z15/Msub_temp_r_48_cy<29>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<30> (z15/Msub_temp_r_48_cy<30>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<31> (z15/Msub_temp_r_48_cy<31>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<32> (z15/Msub_temp_r_48_cy<32>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<33> (z15/Msub_temp_r_48_cy<33>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<34> (z15/Msub_temp_r_48_cy<34>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<35> (z15/Msub_temp_r_48_cy<35>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<36> (z15/Msub_temp_r_48_cy<36>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<37> (z15/Msub_temp_r_48_cy<37>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<38> (z15/Msub_temp_r_48_cy<38>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<39> (z15/Msub_temp_r_48_cy<39>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<40> (z15/Msub_temp_r_48_cy<40>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<41> (z15/Msub_temp_r_48_cy<41>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<42> (z15/Msub_temp_r_48_cy<42>)
+     MUXCY:CI->O           1   0.020   0.000  z15/Msub_temp_r_48_cy<43> (z15/Msub_temp_r_48_cy<43>)
+     XORCY:CI->O           2   0.239   0.423  z15/Msub_temp_r_48_xor<44> (z15/temp_r_48<44>)
+     LUT2:I1->O            1   0.068   0.000  z15/Msub_xa_r[31]_temp_r_32[31]_sub_12_OUT_lut<30> (z15/Msub_xa_r[31]_temp_r_32[31]_sub_12_OUT_lut<30>)
+     MUXCY:S->O            0   0.290   0.000  z15/Msub_xa_r[31]_temp_r_32[31]_sub_12_OUT_cy<30> (z15/Msub_xa_r[31]_temp_r_32[31]_sub_12_OUT_cy<30>)
+     XORCY:CI->O           1   0.239   0.000  z15/Msub_xa_r[31]_temp_r_32[31]_sub_12_OUT_xor<31> (z15/xa_r[31]_temp_r_32[31]_sub_12_OUT<31>)
+     FDE:D                     0.011          z15/yb_r_31
+    ----------------------------------------
+    Total                      8.380ns (7.466ns logic, 0.914ns route)
+                                       (89.1% logic, 10.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1632 / 1632
+-------------------------------------------------------------------------
+Offset:              2.688ns (Levels of Logic = 4)
+  Source:            a21<31> (PAD)
+  Destination:       z10/Mmult_n00511 (DSP)
+  Destination Clock: clk rising
+
+  Data Path: a21<31> to z10/Mmult_n00511
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.003   0.491  a21_31_IBUF (a21_31_IBUF)
+     LUT6:I4->O            1   0.068   0.778  Mmux_stage[3]_tr21[31]_wide_mux_1046_OUT501 (Mmux_stage[3]_tr21[31]_wide_mux_1046_OUT50)
+     LUT6:I0->O            1   0.068   0.417  Mmux_stage[3]_tr21[31]_wide_mux_1046_OUT502 (Mmux_stage[3]_tr21[31]_wide_mux_1046_OUT501)
+     LUT6:I5->O            8   0.068   0.445  Mmux_stage[3]_tr21[31]_wide_mux_1046_OUT503 (stage[3]_tr21[31]_wide_mux_1046_OUT<31>)
+     DSP48E1:B14               0.350          z10/Mmult_xb_r[31]_w_r[15]_MuLt_0_OUT1
+    ----------------------------------------
+    Total                      2.688ns (0.557ns logic, 2.131ns route)
+                                       (20.7% logic, 79.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2048 / 2048
+-------------------------------------------------------------------------
+Offset:              0.843ns (Levels of Logic = 1)
+  Source:            z6/yb_r_31 (FF)
+  Destination:       br13<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: z6/yb_r_31 to br13<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             11   0.375   0.465  z6/yb_r_31 (z6/yb_r_31)
+     OBUF:I->O                 0.003          br13_31_OBUF (br13<31>)
+    ----------------------------------------
+    Total                      0.843ns (0.378ns logic, 0.465ns route)
+                                       (44.8% logic, 55.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    8.380|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 117.00 secs
+Total CPU time to Xst completion: 116.23 secs
+ 
+--> 
+
+Total memory usage is 543880 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  113 (   0 filtered)
+Number of infos    :   91 (   0 filtered)
+
